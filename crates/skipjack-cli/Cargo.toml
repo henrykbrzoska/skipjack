@@ -1,0 +1,19 @@
+[package]
+name = "skipjack-cli"
+description = "Skipjack command line / headless daemon (YouTube TV ad blocker)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "skipjack"
+path = "src/main.rs"
+
+[dependencies]
+skipjack-core.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap = { version = "4", features = ["derive", "env"] }

@@ -1,0 +1,29 @@
+[package]
+name = "skipjack-core"
+description = "Core engine of Skipjack: mute and skip YouTube ads on TVs via the YouTube Lounge API"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+futures-util.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+reqwest.workspace = true
+md-5 = "0.10"
+hex = "0.4"
+uuid = { version = "1", features = ["v4"] }
+rand = "0.8"
+url = "2"
+roxmltree = "0.20"
+dirs = "6"
+mdns-sd = "0.22"
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }
+tokio-rustls = { version = "0.26", default-features = false, features = ["ring", "tls12"] }

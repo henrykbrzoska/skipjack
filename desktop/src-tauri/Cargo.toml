@@ -1,0 +1,25 @@
+[package]
+name = "skipjack-desktop"
+description = "Skipjack desktop app (Tauri + Angular)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "skipjack-desktop"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+skipjack-core.workspace = true
+anyhow.workspace = true
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-opener = "2"
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

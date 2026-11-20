@@ -1,0 +1,6 @@
+/target
+desktop/node_modules
+desktop/dist
+desktop/.angular
+desktop/src-tauri/gen
+desktop/src-tauri/target
